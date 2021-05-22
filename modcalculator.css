@@ -3,31 +3,34 @@
 }
 
 .heading{
-    background: palegreen;
+    background: linear-gradient(45deg,dodgerblue,deepskyblue);
     height:5vh;
 }
 
 .heading h2{
+    
     width:100%;
    display: flex;
    justify-content: center;
    align-items: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: bold;
+  
+    
     letter-spacing: 2px;
-    color:white;
-    text-shadow: 5px 5px 15px rgba(0,0,0,0.2) ;
-   
+    color:black;
+    text-shadow: 5px 5px 6px white ;
+    font-family: 'Alfa Slab One', cursive;
+    font-family: 'Chela One', cursive;
   
 }
 .calculation{
     width:100%;
     height:80vh;
-    background: azure;
+    background: cyan;
     box-shadow: 2px 2px 10px whitesmoke,3px 3px 10px whitesmoke;
     display: flex;
     align-items: center;
-    justify-content:center;position: relative;
+    justify-content:center;
+    position: relative;
 }
 .modcalculate{
     width:400px;
@@ -108,6 +111,13 @@ body{
     word-spacing: 5px;
     line-height: 25px;
     text-shadow: 3px 5px 5px white;
+    
+font-family: 'Alfa Slab One', cursive;
+font-family: 'Bree Serif', serif;
+font-family: 'Chela One', cursive;
+font-family: 'Great Vibes', cursive;
+font-family: 'Kaushan Script', cursive;
+    
 }
 .calculation .mod{
     width:100%;
@@ -123,7 +133,7 @@ body{
     margin-bottom: 10px;
 }
 .calculation .mod span{
-  
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     padding: 0;
     width:100%;
 }
@@ -143,7 +153,7 @@ body{
 @media(max-width:800px)
 {
     body{
-        background:aliceblue;
+        background:cyan;
         
     }
 .calculation{
@@ -167,5 +177,20 @@ body{
 .footer{
     display: none;
 }
+
+}
+
+@media(max-width:430px){
+    .calculation .mod{
+        position: absolute;
+        top:650px;
+    }
+    
+    .calculation .mod span{
+        position: absolute;
+        top:80px;
+    }
+
+
 
 }
