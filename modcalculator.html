@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="modcalculator.css">
+</head>
+<body>
+
+
+
+    <div class="heading">
+
+        <h2>Mod Calculator</h2>
+    </div>
+
+    <!--calculation-->
+    <div class="calculation">
+        <div class="modcalculate">
+        <input type="text" id="n1">
+        <h2>%</h2>
+        <input type="text" id="n2">
+       
+        <button class="progress-bar progress-striped" id="calculatebtn" onclick="result();">Calculate</button>
+           
+        <div class="show">
+
+        </div>
+        </div>
+
+
+         <!--CONTENT-->
+         <span>This calculator is very much useful while finding remainder of two numbers.
+             I have seen lot of programming questions related to modulo operation.While Calculating modulo 
+             its quite difficult to find remainder by your own.Here Put two numbers and calculate easily.Give me your 
+             feedback.That will help me to find Bugs and your opinion to improve .Thank You to All.
+         </span>
+         <div class="mod">
+            <h3>Do You Know About Modulo operation?</h3>
+            <span>
+                In computing, the modulo operation returns the remainder or signed remainder of a division, after one number is divided by another (called the modulus of the operation).
+
+Given two positive numbers a and n, a modulo n (abbreviated as a mod n) is the remainder of the Euclidean division of a by n, where a is the dividend and n is the divisor.[1] The modulo operation is to be distinguished from the symbol mod, which refers to the modulus[2] (or divisor) one is operating from.
+
+For example, the expression "5 mod 2" would evaluate to 1, because 5 divided by 2 has a quotient of 2 and a remainder of 1, while "9 mod 3" would evaluate to 0, because the division of 9 by 3 has a quotient of 3 and a remainder of 0; there is nothing to subtract from 9 after multiplying 3 times 3.
+
+(Here, notice that doing division with a calculator will not show the result of the modulo operation, and that the quotient will be expressed as a decimal fraction if a non-zero remainder is involved.)
+
+Although typically performed with a and n both being integers, many computing systems now allow other types of numeric operands. The range of numbers for an integer modulo of n is 0 to n − 1 inclusive (a mod 1 is always 0; a mod 0 is undefined, possibly resulting in a division by zero error in some programming languages)
+            </span>
+          
+         </div>
+         
+         
+        </div>
+    
+       <div class="footer">
+           <h2>
+           Developed By Souradip
+        </h2>
+       </div>
+        
+    </div>
+
+    
+
+    <script>
+ const result=()=>{
+ let  n1=document.getElementById("n1").value
+ let  n2=document.getElementById("n2").value
+ let show=document.querySelector('.show')
+ if(n1=="" || n2=="")
+ window.alert("Please Enter Two Numbers")
+ else{let rem=n1%n2   
+ show.innerHTML='Result is: '+rem
+ }}
+
+    </script>
+
+
+</body>
+</html>
